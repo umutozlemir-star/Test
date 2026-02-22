@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Termux
+pkg install python -y > /dev/null 2>&1
+
+# Ubuntu/Debian/Kali
+sudo apt update -y > /dev/null 2>&1
+sudo apt install python3-pip -y > /dev/null 2>&1
+
+# Arch Linux
+sudo pacman -S python-pip --noconfirm > /dev/null 2>&1
+
+# Fedora/DNF
+sudo dnf install python3-pip -y > /dev/null 2>&1
+python code/py/hello.py
